@@ -12,7 +12,7 @@ function Banner() {
         console.log(request);
         setMovie(
           request.data.results[
-            Math.floor(Math.random() * request.data.results.length)
+            Math.floor(Math.random() * request.data.results.length) //randam select one movie
           ]
         );
       } catch (error) {
@@ -22,7 +22,7 @@ function Banner() {
   }, []);
 
   function truncate(str, n) {
-    return str?.length > n ? str.substr(0, n - 1) + "..." : str;
+    return str?.length > n ? str.substr(0, n - 1) + "..." : str;// description string number below 150
   }
   return (
     <div
@@ -36,7 +36,7 @@ function Banner() {
     >
       <div className="banner__contents">
         <h1 className="banner__title">
-          {movie?.title || movie?.name || movie?.original_name}
+          {movie?.title || movie?.name || movie?.original_name} //from three name select one
         </h1>
         <div className="banner__buttons">
           <button className="banner__button play">Play</button>
