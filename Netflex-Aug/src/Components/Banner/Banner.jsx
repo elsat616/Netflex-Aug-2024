@@ -34,19 +34,19 @@ function Banner() {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <div className="banner__contents">
-        <h1 className="banner__title">
-          {movie?.title || movie?.name || movie?.original_name} //from three name select one
+      <div className="banner_contents">
+        <h1 className="banner_title">
+          {movie?.title || movie?.name || movie?.original_name} 
         </h1>
-        <div className="banner__buttons">
-          <button className="banner__button play">Play</button>
-          <button className="banner__button">My List</button>
+        <div className="banner_buttons">
+          <button className="banner_button play">Play</button>
+          <button className="banner_button">My List</button>
         </div>
-        <h1 className="banner__description">
+        <h1 className="banner_description">
           {truncate(movie?.overview, 150)}
         </h1>
       </div>
-      <div className="banner__fadeBottom" />
+      <div className="banner_fadeBottom" />
     </div>
   );
 }
