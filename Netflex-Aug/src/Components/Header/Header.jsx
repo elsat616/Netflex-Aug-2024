@@ -1,18 +1,21 @@
 import React from "react";
 import "./header.css";
-import netflixlogo from "../../assets/image/netflixlogo.png"
-import SearchIcon from '@mui/icons-material/Search';
-import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
-import AccountBoxIcon from '@mui/icons-material/AccountBox';
-import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import netflixlogo from "../../assets/image/netflixlogo.png";
+import SearchIcon from "@mui/icons-material/Search";
+import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
+import AccountBoxIcon from "@mui/icons-material/AccountBox";
+import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
+import { IoMenu } from "react-icons/io5";
 
 function Header() {
   return (
     <div className="header_outer_container">
       <div className="header_container">
         <div className="header_left">
-          <ul>
-            <li><img src={netflixlogo} alt = "Netflix logo" width = "100"/></li>
+          <ul className="menu-list">
+            <li>
+              <img src={netflixlogo} alt="Netflix logo" width="100" />
+            </li>
             <li>Home</li>
             <li>TVShow</li>
             <li>Movies</li>
@@ -23,7 +26,10 @@ function Header() {
         </div>
         <div className="header_right">
           <ul>
-             <li>
+            <li>
+              <IoMenu />
+            </li>
+            <li>
               <SearchIcon />
             </li>
             <li>
@@ -34,7 +40,7 @@ function Header() {
             </li>
             <li>
               <ArrowDropDownIcon />
-            </li>  
+            </li>
           </ul>
         </div>
       </div>
