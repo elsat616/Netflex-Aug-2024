@@ -30,9 +30,9 @@ function Banner() {
       style={{
         backgroundSize: "cover",
         backgroundImage: `url('https://image.tmdb.org/t/p/original${movie?.backdrop_path}')`,
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-        marginTop: "20px",
+        // backgroundPosition: "center",
+        // backgroundRepeat: "no-repeat",   
+          backgroundPosition: " top center no-repeat",
       }}
     >
       <div className="banner_contents">
